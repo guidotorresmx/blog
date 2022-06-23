@@ -32,7 +32,7 @@
     "hexo-renderer-stylus": "^2.0.0",
     "hexo-server": "^2.0.0",
     "hexo-theme-landscape": "^0.0.3",
-    "sass": "^1.50.0",
+    "sass": "^1.53.0",
     "stylus": "^0.55.0"
   }
 }
