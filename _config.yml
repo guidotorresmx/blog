@@ -4,7 +4,7 @@
 
 # Site
 title: Marco Guido's blog
-subtitle: 'Software and some electronics stuff'
+subtitle: 'Programming, electronics and opinions in that order'
 description: ''
 keywords:
 author: Marco Guido
@@ -13,7 +13,7 @@ timezone: 'Canada/Eastern'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://guidotorres.mx
+url: http://guidotorres.mx/blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
