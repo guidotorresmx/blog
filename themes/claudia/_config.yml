@@ -14,19 +14,20 @@ widgets:
 # social config
 social:
   twitter: guidotorresmx
-  facebook: guidotorresmx
-  linkedin: guidotorresmx
-  instagram: guidotorresmx
   github: guidotorresmx
+  instagram: guidotorresmx
+  linkedin: guidotorresmx
+  facebook: guidotorresmx
   mail: marco@guidotorres.mx
-  phone: 16479066194
+  phone: +16479066194
+  whatsapp: 16479066194
   telegram: guidotorresmx
 
 user:
   name: Marco Guido
   avatar: /images/avatar.jpg
   location: Toronto, ON
-  description: Programming, opinions and stuff
+  description: Programming, electronics and Opinions in that order
   footnotes: # footnotes
 
 # documents: https://github.com/utterance/utterances
