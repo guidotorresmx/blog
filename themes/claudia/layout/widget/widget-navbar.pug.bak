@@ -1,0 +1,86 @@
+
+header.header-widget.is-flex-shrink-0.is-hidden-mobile.container.is-fullhd.is-flex.is-justify-content-space-between.is-align-items-center.is-full-height
+        section.is-hidden-mobile.is-flex-shrink-0
+            h2
+                a(href= url_for("/"))= (theme.user && theme.user.name || config.author) + "'s blog"
+
+        h3.is-hidden-mobile.is-family-serif.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
+            block topic
+
+        aside.is-flex-shrink-0
+            if theme.menu
+                each url, label in theme.menu
+                    h3.is-inline-block
+                        a(href= url_for(url))= label && _p(label.toLowerCase())
+
+header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-center.is-hidden-tablet
+        if theme.menu
+            each url, label in theme.menu
+                h3.is-inline-block
+                    a(href= url_for(url))= label && _p(label.toLowerCase())
+
+//-
+  nav.navbar.is-fixed-top.is-hidden-print(role='navigation' aria-label='main navigation')
+    .navbar-brand
+      a.navbar-item.has-text-centered-mobile(href='https://www.guidotorres.mx')
+        img(src='https://www.guidotorres.mx/resume/assets/logo-rounded.svg' width='50' height='50')
+        | guidotorresmx
+      a.navbar
+      a.navbar-burger.burger(role='button' aria-label='menu' aria-expanded='false' data-target='navbar-main')
+        span(aria-hidden='true')
+        span(aria-hidden='true')
+        span(aria-hidden='true')
+    #navbar-main.navbar-menu
+      .navbar-start.has-text-centered-mobile
+        a.navbar-item
+          | Blog
+        a.navbar-item
+          | About
+        a.navbar-item
+          | Resume
+        a.navbar-item
+          | Demo
+
+      .navbar-end.has-text-centered-mobile.is-size-6-mobile
+        .navbar-item
+          .field.is-grouped.is-grouped-centered.is-hidden-tablet-only
+            // Twitter
+            a.button.is-white.no-hover(title='twitter' href="//twitter.com/guidotorresmx")
+              span.icon-text 
+                span.icon
+                  i.fa.fa-brands.fa-twitter.icon
+            // Github
+            a.button.is-white.no-hover(title='github' href="//github.com/guidotorresmx")
+              span.icon-text 
+                span.icon
+                  i.fa.fa-brands.fa-github.icon
+            // Ins
+            a.button.is-white.no-hover(title='instagram' href="//www.instagram.com/guidotorresmx")
+              span.icon-text 
+                span.icon
+                  i.fa.fa-brands.fa-instagram.icon
+            // Linkedin
+            a.button.is-white.no-hover(title='linkedin' href="//www.linkedin.com/in/guidotorresmx")
+              span.icon-text 
+                span.icon
+                  i.fa.fa-brands.fa-linkedin.icon
+            // Facebook
+            a.button.is-white.no-hover(title='facebook' href="//www.facebook.com/guidotorresmx")
+              span.icon-text 
+                span.icon
+                  i.fa.fa-brands.fa-facebook.icon
+            // Mail
+            a.button.is-white.no-hover(title='mail' href="mailto:marco@guidotorres.mx")
+              span.icon-text 
+                span.icon
+                  i.fa.fa-solid.fa-envelope-open.icon
+            // Whatsapp
+            a.button.is-white.no-hover(title='whatsapp' href="//wa.me/16479066194")
+              span.icon-text 
+                span.icon
+                  i.fa.fa-brands.fa-whatsapp.icon
+            // Telegram
+            a.button.is-white.no-hover(title='telegram' href="//t.me/guidotorresmx")
+              span.icon-text 
+                span.icon
+                  i.fa.fa-brands.fa-telegram.icon

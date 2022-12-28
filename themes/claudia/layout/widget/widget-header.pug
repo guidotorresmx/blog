@@ -1,18 +1,71 @@
-header.header-widget.is-flex-shrink-0.is-hidden-mobile
-    .container.is-fullhd.is-flex.is-justify-content-space-between.is-align-items-center.is-full-height
-        section.is-hidden-mobile.is-flex-shrink-0
-            h2
-                a(href= url_for("/"))= (theme.user && theme.user.name || config.author) + "'s blog"
-        h3.is-hidden-mobile.is-family-serif.is-full-height.is-flex.is-align-items-center.is-flex-shrink-0
-            block topic
-        aside.is-flex-shrink-0
-            if theme.menu
-                each url, label in theme.menu
-                    h3.is-inline-block
-                        a(href= url_for(url))= label && _p(label.toLowerCase())
-header.is-flex.header-widget.is-flex-shrink-0.is-align-items-center.is-justify-content-center.is-hidden-tablet
-        if theme.menu
-            each url, label in theme.menu
-                h3.is-inline-block
-                    a(href= url_for(url))= label && _p(label.toLowerCase())
+block append head
+  script(src= url_for("/js/nav.js"), defer)
 
+nav.header-widget.navbar.is-fixed-top.is-hidden-print.is-dark#navbar(role='navigation' aria-label='main navigation')
+  .navbar-brand.is-dark
+    a.navbar-item.has-text-centered-mobile.is-dark(href='https://www.guidotorres.mx')
+      img(src='https://www.guidotorres.mx/resume/assets/logo-rounded.svg' width='50' height='50')
+    a.navbar-item.has-text-centered-mobile.is-dark.is-flex.is-flex-shrink-1.is-flex-grow-5.is-justify-content-center(href='https://www.guidotorres.mx')  
+      | guidotorresmx
+    a.navbar-burger.burger.is-dark(role='button' aria-label='menu' aria-expanded='false' data-target='navbar-main')
+      span(aria-hidden='true')
+      span(aria-hidden='true')
+      span(aria-hidden='true')
+
+  #navbar-main.navbar-menu.is-dark
+    .navbar-start.has-text-centered-mobile.is-dark
+      a.navbar-item.is-dark
+        | Blog
+      a.navbar-item.is-dark
+        | About
+      a.navbar-item.is-dark
+        | Resume
+      a.navbar-item.is-dark
+        | Demo
+      span.navbar-item
+      span.navbar-item.is-dark.is-spaced
+        block topic
+
+    .navbar-end.has-text-centered-mobile.is-size-6-mobile.is-dark.is-spaced
+      .navbar-item.is-dark
+        .field.is-grouped.is-grouped-centered.is-hidden-tablet-only.is-dark
+          // Twitter
+          a.button.is-dark.no-hover(title='twitter' href="//twitter.com/guidotorresmx")
+            span.icon-text 
+              span.icon
+                i.fa.fa-brands.fa-twitter.icon.is-flex
+          // Github
+          a.button.is-dark.no-hover(title='github' href="//github.com/guidotorresmx")
+            span.icon-text 
+              span.icon
+                i.fa.fa-brands.fa-github.icon.is-flex
+          // Ins
+          a.button.is-dark.no-hover(title='instagram' href="//www.instagram.com/guidotorresmx")
+            span.icon-text 
+              span.icon
+                i.fa.fa-brands.fa-instagram.icon.is-flex
+          // Linkedin
+          a.button.is-dark.no-hover(title='linkedin' href="//www.linkedin.com/in/guidotorresmx")
+            span.icon-text 
+              span.icon
+                i.fa.fa-brands.fa-linkedin.icon.is-flex
+          // Facebook
+          a.button.is-dark.no-hover(title='facebook' href="//www.facebook.com/guidotorresmx")
+            span.icon-text 
+              span.icon
+                i.fa.fa-brands.fa-facebook.icon.is-flex
+          // Mail
+          a.button.is-dark.no-hover(title='mail' href="mailto:marco@guidotorres.mx")
+            span.icon-text 
+              span.icon
+                i.fa.fa-solid.fa-envelope-open.icon.is-flex
+          // Whatsapp
+          a.button.is-dark.no-hover(title='whatsapp' href="//wa.me/16479066194")
+            span.icon-text 
+              span.icon
+                i.fa.fa-brands.fa-whatsapp.icon.is-flex
+          // Telegram
+          a.button.is-dark.no-hover(title='telegram' href="//t.me/guidotorresmx")
+            span.icon-text 
+              span.icon
+                i.fa.fa-brands.fa-telegram.icon.is-flex.is-flex
