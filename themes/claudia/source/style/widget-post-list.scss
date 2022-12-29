@@ -180,9 +180,24 @@ $coverBlurEffect: 20px;
       border-top: 1px solid var(--border-line-color);
       flex-wrap: wrap;
 
+      a.button.is-dark{
+        background-color: var(--second-bg-color);
+        padding-left: calc(0.75em - 1px);
+        padding-right: calc(0.75em - 1px);
+        border: inherit;
+
+        &:hover,
+        &:hover .iconfont {
+          i{
+            text-decoration: none;
+            color: $activeColor!important;
+          }
+        }
+      }    
+
       i {
         margin: 0 8px;
-        font-size: 30px;
+        font-size: 1.25rem;
         color: #fff
       }
     }

@@ -47,12 +47,17 @@
             }
             .sns-container .fa {
                 margin: 0 5px;
-                font-size: 30px;
-                background-color: #eee;
+                font-size: 1.25rem;
                 border-radius: 50%;
             }
+            
+            section.sns-container a.button.is-dark{
+                background-color: var(--primary-bg-color)
+            }    
         }
     }
 }
+
+
 
 @import "widget-header";

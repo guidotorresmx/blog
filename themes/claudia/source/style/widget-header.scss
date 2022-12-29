@@ -2,10 +2,14 @@
   background-color:  var(--top-bar-bg-color);
   background:  var(--top-bar-bg-color);
 
-  a {
+  a.button.is-dark {
     color: var(--primary-text-color);
   }
 
+  i {
+    margin: 0 8px;
+  }
+  
   h3 {
     font-weight: bold;
   }
