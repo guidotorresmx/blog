@@ -241,7 +241,7 @@
 }
 .post-container .profile-widget .sns-container a.button.is-dark:hover i, .post-container .profile-widget .sns-container a.button.is-dark:hover .iconfont i {
   text-decoration: none;
-  color: #3273dc !important;
+  color: var(--accent-color-main) !important;
   animation: bounce 1s ease infinite;
 }
 .post-container .profile-widget .sns-container i {
@@ -305,5 +305,5 @@
 .post-container .paginator .page-number.current,
 .post-container .paginator .extend.current {
   color: #fff !important;
-  background: #3273dc;
+  background: var(--accent-color-main);
 }
