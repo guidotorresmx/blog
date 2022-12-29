@@ -376,3 +376,7 @@
   border-top: thick double var(--accent-color-main);
   border-bottom: thick double var(--accent-color-main);
 }
+
+nav .navbar-item {
+  transition: 0.4s;
+}
