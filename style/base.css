@@ -144,17 +144,22 @@
 }
 :root body > footer .sns-container .fa {
   margin: 0 5px;
-  font-size: 30px;
-  background-color: #eee;
+  font-size: 1.25rem;
   border-radius: 50%;
+}
+:root body > footer section.sns-container a.button.is-dark {
+  background-color: var(--primary-bg-color);
 }
 
 .header-widget {
   background-color: var(--top-bar-bg-color);
   background: var(--top-bar-bg-color);
 }
-.header-widget a {
+.header-widget a.button.is-dark {
   color: var(--primary-text-color);
+}
+.header-widget i {
+  margin: 0 8px;
 }
 .header-widget h3 {
   font-weight: bold;

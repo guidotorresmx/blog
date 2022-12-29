@@ -155,9 +155,19 @@
   border-top: 1px solid var(--border-line-color);
   flex-wrap: wrap;
 }
+.post-container .profile-widget .sns-container a.button.is-dark {
+  background-color: var(--second-bg-color);
+  padding-left: calc(0.75em - 1px);
+  padding-right: calc(0.75em - 1px);
+  border: inherit;
+}
+.post-container .profile-widget .sns-container a.button.is-dark:hover i, .post-container .profile-widget .sns-container a.button.is-dark:hover .iconfont i {
+  text-decoration: none;
+  color: #3273dc !important;
+}
 .post-container .profile-widget .sns-container i {
   margin: 0 8px;
-  font-size: 30px;
+  font-size: 1.25rem;
   color: #fff;
 }
 .post-container .recent-widget ul li {
