@@ -20,11 +20,11 @@
         .tag.post-item-tag {
             margin-right: 5px;
             font-weight: bold;
-            color: darkorange;
-            font-style: normal;
+            color: $accent-color-main;
+            font-style: normal; 
             border-radius: 10px;
             background: transparent;
-            border: 2px solid darkorange;
+            border: 2px solid $accent-color-main;
         }
         .button.is-default {
             height: 40px;

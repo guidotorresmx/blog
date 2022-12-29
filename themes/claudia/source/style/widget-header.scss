@@ -36,11 +36,30 @@
 #navbar{
   background-color:  var(--top-bar-bg-color);
   background:  var(--top-bar-bg-color);
+}
 
+.navbar-menu {
+  animation: navAnimOpen .7s ease-in-out;
+}
+
+@keyframes navAnimOpen {
+  0% {display: none;opacity: 0;max-height: 0;}
+  1% {display: block;opacity: 0;}
+  100% {opacity: 1;max-height: 100%;}  
 }
 
 .navbar.is-dark .navbar-brand,
 .navbar.is-dark .navbar-item
 {
-  transition: .5s;
+  transition: .7s;
+  animation: navAnimOpen .7s ease-in-out;
+}
+
+.navbar .active{
+  border-top: thick double var(--primary-text-color);
+  border-bottom: thick double var(--primary-text-color);
+  &:hover{
+    border-top: thick double var(--accent-color-main);
+    border-bottom: thick double var(--accent-color-main);
+  }
 }
