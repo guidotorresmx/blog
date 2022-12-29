@@ -63,3 +63,7 @@
     border-bottom: thick double var(--accent-color-main);
   }
 }
+
+nav .navbar-item{
+  transition: .4s;
+}
