@@ -1,6 +1,7 @@
 @import url("//at.alicdn.com/t/font_2266068_otkvzqnxk0g.css");
 @import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import "common/variable";
+@import "common/helper";
 @import "themes/theme";
 :root {
     body {
@@ -13,6 +14,7 @@
             &:hover .iconfont {
                 text-decoration: none;
                 color: $activeColor!important;
+                
             }
         }
         .tag.post-item-tag {
@@ -52,7 +54,16 @@
             }
             
             section.sns-container a.button.is-dark{
-                background-color: var(--primary-bg-color)
+                background-color: var(--primary-bg-color);
+                &:hover,
+                &:hover .iconfont {
+                  i{
+                    text-decoration: none;
+                    color: $activeColor!important;
+                    animation: bounce 1s ease infinite;
+                  }
+                }
+            
             }    
         }
     }

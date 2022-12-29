@@ -1,4 +1,6 @@
 @import "common/variable";
+@import "common/helper";
+
 $avatarSize: 180px;
 $coverMaxHeight: 360px;
 $coverBlurEffect: 20px;
@@ -191,6 +193,7 @@ $coverBlurEffect: 20px;
           i{
             text-decoration: none;
             color: $activeColor!important;
+            animation: bounce 1s ease infinite;
           }
         }
       }    
