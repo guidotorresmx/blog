@@ -54,7 +54,7 @@ comment_disqus:
 appearance: dark # Default value is auto
 
 # Miscellaneous
-favicon: /images/favicon-animated.gif
+favicon: /images/logo-rounded.svg
 
 # Google Analytics
 ga_track_id:
