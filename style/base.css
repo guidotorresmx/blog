@@ -343,6 +343,25 @@
   background: var(--top-bar-bg-color);
 }
 
+.navbar.is-dark .navbar-brand,
+.navbar.is-dark .navbar-item {
+  transition: 0.7s;
+  animation: navAnimOpen 0.7s ease-in-out;
+}
+
+.navbar .active {
+  border-top: thick double var(--primary-text-color);
+  border-bottom: thick double var(--primary-text-color);
+}
+.navbar .active:hover {
+  border-top: thick double var(--accent-color-main);
+  border-bottom: thick double var(--accent-color-main);
+}
+
+nav .navbar-item {
+  transition: 0.4s;
+}
+
 .navbar-menu {
   animation: navAnimOpen 0.7s ease-in-out;
 }
@@ -362,21 +381,25 @@
     max-height: 100%;
   }
 }
-.navbar.is-dark .navbar-brand,
-.navbar.is-dark .navbar-item {
-  transition: 0.7s;
-  animation: navAnimOpen 0.7s ease-in-out;
+#arrow1, #arrow2, #arrow3 {
+  transition: all 1s ease;
 }
 
-.navbar .active {
-  border-top: thick double var(--primary-text-color);
-  border-bottom: thick double var(--primary-text-color);
+#logo-brand {
+  height: 50px;
+  max-width: 100%;
+  max-height: 1.75rem;
+  transition: all 1s ease;
 }
-.navbar .active:hover {
-  border-top: thick double var(--accent-color-main);
-  border-bottom: thick double var(--accent-color-main);
+#logo-brand:hover, #logo-brand:focus, #logo-brand:active {
+  transform: rotateZ(18deg);
 }
-
-nav .navbar-item {
-  transition: 0.4s;
+#logo-brand:hover #arrow1, #logo-brand:focus #arrow1, #logo-brand:active #arrow1 {
+  transform: rotateZ(45deg) translate(30%, -125%);
+}
+#logo-brand:hover #arrow2, #logo-brand:focus #arrow2, #logo-brand:active #arrow2 {
+  transform: rotateZ(45deg) translate(18.5%, -97.5%);
+}
+#logo-brand:hover #arrow3, #logo-brand:focus #arrow3, #logo-brand:active #arrow3 {
+  transform: rotateZ(45deg) translate(7%, -70%);
 }
