@@ -34,6 +34,7 @@
 }
 
 #navbar{
+  transition: all .4s ease-in-out;
   background-color:  var(--top-bar-bg-color);
   background:  var(--top-bar-bg-color);
 }
@@ -47,16 +48,10 @@
 }
 
 .navbar .active{
-  border-top: thick double var(--primary-text-color);
-  border-bottom: thick double var(--primary-text-color);
+  border-bottom: thick ridge var(--primary-text-color);
   &:hover{
-    border-top: thick double var(--accent-color-main);
-    border-bottom: thick double var(--accent-color-main);
+    border-bottom: thick ridge var(--accent-color-main);
   }
-}
-
-nav .navbar-item{
-  transition: .4s;
 }
 
 .navbar-menu {
