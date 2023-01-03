@@ -11,7 +11,7 @@ categories:
 
 # Marco Guido | Full-stack dev
 
-Hi, this is Marco, part-time sleeper, full-time pesimist and casual programmer, experienced full-stack dev with a solid machine learning foundation.
+Hi, this is Marco, part-time sleeper, full-time pesimist and programmer, experienced full-stack dev with a solid machine learning foundation.
 
 [blog 🖱️💻](https://img.shields.io/badge/-FFF?&logo=mouse) | [twitter 🐤✒️](http://twitter.com/guidotorresmx) | [github 🐈‍⬛🐙](http://github.com/guidotorresmx) | [instagram 🤳](http://www.instagram.com/guidotorresmx) | [linkedin 🕸️🧑‍💻](http://www.linkedin.com/in/guidotorresmx) | [facebook 🙂📕](http://www.facebook.com/guidotorresmx) | [email 📧](marco@guidotorres.mx) | [telegram 📤✈️](http://t.me/guidotorresmx)
 
@@ -26,12 +26,11 @@ Machine Learning, microservice, CI/CD, WebApps.
 
 ### Tools I use
 - atom (hydrogen)
-- vscode (dotnet tools)
+- vscodium
 - linux (pop-os fan)
 - Win + WSL (best of both worlds)
 - zsh + powerlevel9k (feeling fancy)
-- multidesktop
-- botframework (emulator, no composer)  
+- multidesktop 
 - ngrok
 - postman
 

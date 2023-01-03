@@ -25,7 +25,7 @@ social:
 
 user:
   name: Marco Guido
-  avatar: /images/avatar.jpg
+  avatar: /images/avatar.png
   location: Toronto, ON
   description: Programming, electronics and Opinions in that order
   footnotes: # footnotes
@@ -64,4 +64,4 @@ ga_domain:
 ba_track_id:
 
 # picture of about page
-about_pic: about.jpg
+about_pic: avatar.png
