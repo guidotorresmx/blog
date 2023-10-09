@@ -321,6 +321,7 @@
 }
 .header-widget a.button.is-dark {
   color: var(--primary-text-color);
+  background-color: unset;
 }
 .header-widget a.button.is-dark:hover i, .header-widget a.button.is-dark:hover .iconfont i {
   text-decoration: none;
@@ -337,8 +338,12 @@
   background: var(--top-bar-bg-color);
 }
 
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    background-color: unset;
+  }
+}
 nav#navbar {
-  transition: all 0.4s ease-in-out;
   background-color: var(--top-bar-bg-color);
   background: var(--top-bar-bg-color);
 }
@@ -351,8 +356,8 @@ nav#navbar {
   filter: drop-shadow(0 -10px 20px var(--primary-bg-color));
 }
 
-.navbar.is-dark .navbar-brand,
-.navbar.is-dark .navbar-item {
+.navbar-item,
+.navbar {
   transition: 0.7s;
   animation: navAnimOpen 0.7s ease-in-out;
 }
@@ -364,26 +369,19 @@ nav#navbar {
   border-bottom: thick ridge var(--accent-color-main);
 }
 
-.navbar-menu {
-  animation: navAnimOpen 0.7s ease-in-out;
-}
-
 @keyframes navAnimOpen {
   0% {
-    display: none;
     opacity: 0;
-    max-height: 0;
-  }
-  1% {
-    display: block;
-    opacity: 0;
+    max-height: 0%;
   }
   100% {
     opacity: 1;
     max-height: 100%;
   }
 }
-#arrow1, #arrow2, #arrow3 {
+#arrow1,
+#arrow2,
+#arrow3 {
   transition: all 1s ease;
 }
 
